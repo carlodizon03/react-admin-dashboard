@@ -5,6 +5,8 @@ import Topbar from "./scences/global/Topbar";
 import Sidebar from "./scences/global/Sidebar";
 import Dashboard from "./scences/dashboard";
 import Team from "./scences/team";
+import Contacts from "./scences/contacts";
+
 function App() {
   const [theme, colorMode] = useMode();
 
@@ -19,8 +21,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
-              {/*<Route path="/context" element={}/>
-              <Route path="/invoices" element={}/>
+              <Route path="/contacts" element={<Contacts />} />
+              {/*<Route path="/invoices" element={}/>
               <Route path="/form" element={}/>
               <Route path="/bar" element={}/>
               <Route path="/pie" element={}/>
