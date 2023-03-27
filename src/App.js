@@ -8,6 +8,7 @@ import Team from "./scences/team";
 import Contacts from "./scences/contacts";
 import Invoices from "./scences/invoices";
 import Form from "./scences/form";
+import Calendar from "./scences/calendar";
 function App() {
   const [theme, colorMode] = useMode();
 
@@ -25,12 +26,13 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/calendar" element={<Calendar />} />
               {/*<Route path="/bar" element={}/>
               <Route path="/pie" element={}/>
               <Route path="/line" element={}/>
               <Route path="/faq" element={}/>
               <Route path="/geography" element={}/>
-              <Route path="/calendar" element={}/> */}
+               */}
             </Routes>
           </main>
         </div>
